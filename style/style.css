@@ -1,0 +1,106 @@
+@import url(reset.css);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+}
+.background {
+    position: absolute;
+    background: url(../img/bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    filter: blur(2px);
+    min-height: 100vh;
+    min-width: 100vw;
+    top: 0;
+    z-index: -1;
+}
+.card {
+    box-shadow: 0 18px 200px -60px black;
+    border-radius: 50px;
+    border: 2px solid #ffffff40;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(4px);
+    align-items: center;
+    gap: 12px;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 2rem;
+    z-index: 1;
+}
+@media (min-width:720px) {
+    .card {
+        margin: 0px;
+    }
+}
+.card__profile-picture {
+    --profile-picture-size: 140px;
+    content: url(../img/profile.jpeg);
+    width: var(--profile-picture-size);
+    height: var(--profile-picture-size);
+    border: 4px solid #ffffff40;
+    box-shadow: 0px 0px 16px 4px black;
+    border-radius: 999px;
+}
+.card__title {
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+.card__subtitle {
+    font-weight: 700;
+}
+.card__endereco {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+}
+.card__links {
+    display: flex;
+    gap: 4px;
+}
+.card__links a {
+    border: 2px solid #000;
+    align-self: center;
+    border-radius: 8px;
+}
+.card__bottom {
+    display: flex;
+    gap: 20px;
+}
+.botao {
+    border: 2px solid #000;
+    border-radius: 16px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+}
+@media (min-width:720px) {
+    .card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 4rem 2rem;
+        justify-content: space-around;
+    }
+    .card__profile-picture {
+        height: 280px;
+        width: 280px;
+    }
+    .card__title {
+        text-align: center;
+        font-size: 26px;
+        width: 40vw;
+    }
+    .card__subtitle {
+        font-size: 20px;
+        width: 40vw;
+    }
+}
