@@ -50,16 +50,21 @@ body {
     border-radius: 999px;
 }
 .card__title {
-    font-weight: 900;
-    font-size: 1.4rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
 }
 .card__subtitle {
-    font-weight: 700;
+    font-weight: 600;
 }
 .card__endereco {
     display: flex;
     align-items: center;
     font-weight: 900;
+}
+.card__endereco svg {
+    height: 20px;
+    width: 20px;
 }
 .card__links {
     display: flex;
@@ -74,14 +79,23 @@ body {
     display: flex;
     gap: 20px;
 }
+svg {
+    height: 40px;
+    width: 60px;
+}
 .botao {
     border: 2px solid #000;
     border-radius: 16px;
-    font-weight: 900;
+    font-weight: 600;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.4rem;
+}
+.botao svg {
+    height: 32px;
+    width: 32px;
 }
 @media (min-width:720px) {
     .card {
@@ -96,11 +110,12 @@ body {
     }
     .card__title {
         text-align: center;
-        font-size: 26px;
+        font-size: 4rem;
         width: 40vw;
     }
     .card__subtitle {
         font-size: 20px;
+        font-weight: 500;
         width: 40vw;
     }
 }
