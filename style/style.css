@@ -34,7 +34,6 @@ body {
     justify-content: center;
     padding: 2rem;
     background-color: rgba(0, 0, 0, 0.2);
-    margin: 4%;
     z-index: 1;
 }
 @media (max-width:290px) {
